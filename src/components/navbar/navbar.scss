@@ -1,0 +1,96 @@
+@import "../../App.scss";
+
+.navbar {
+    height: 120px;
+    background-color: #000;
+
+    .wrapper {
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @include tablet{
+            max-width: 400px;
+        }
+
+        
+
+        .logo-text-white {
+            height: 100px;
+            transition: all 1s;
+            
+            @include mobile{
+                display: none;
+            }
+        }
+
+        .logo-text-white:hover {
+            transform: scale(1.1);
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-media {
+            height: 40px;
+            gap: 20px;
+            border-radius: 20%;
+            margin: 0px 10px 0px 10px;
+            transition: all .5s;
+            
+        }
+
+        #social-media1:hover {
+            transform: scale(1.3) rotate(calc(45deg * var(--direction)));
+            transition: all .5s;
+            box-shadow: 0px 0px 10px 10px #0575E6, 0px 0px 10px 10px #021B79, 0px 0px 10px 10px #0575E6;
+            background: #021B79;
+        }
+        #social-media2:hover {
+            transform: scale(1.3) rotate(calc(45deg * var(--direction)));
+            transition: all .5s;
+            background-color: #0f9b0f;
+            box-shadow: 0px 0px 10px 10px #60e35b, 0px 0px 10px 10px #45B649, 0px 0px 10px 10px #60e35b;
+        }
+        #social-media3:hover {
+            transform: scale(1.3) rotate(calc(45deg * var(--direction)));
+            transition: all .5s;
+            box-shadow: -5px 0px 10px 5px #833ab4, 0px 0px 10px 5px #FD1D1D, 5px 0px 10px 5px #fcb045;
+            background: linear-gradient(to right, #833ab4 0%, #FD1D1D 50%, #fcb045 100%);
+
+        
+
+            // @include mobile{
+            //     transform: rotate(calc(45deg * var(--direction)));
+            // }
+
+        }
+        #social-media4:hover {
+            transform: scale(1.3) rotate(calc(45deg * var(--direction)));
+            transition: all .5s;
+            background-color: #b1b1b1;
+            box-shadow: 0px 0px 10px 10px #fff, 0px 0px 10px 10px #fff, 0px 0px 10px 10px #fff;
+        }
+
+        #social-media1 {
+            --direction: 1;
+        }
+
+        #social-media2 {
+            --direction: -1;
+        }
+
+        #social-media3 {
+            --direction: 1;
+        }
+        #social-media4 {
+            --direction: -1;
+        }
+
+    }
+}

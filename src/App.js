@@ -1,11 +1,14 @@
-
-import './App.css';
+import React from 'react';
+import './App.scss';
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
   return (
     <div className="App">
-      <section>Hero</section>
+      <section>
+        <Navbar/>
+      </section>
       <section>Parallax</section>
       <section>Services</section>
       <section>Portfolio1</section>
