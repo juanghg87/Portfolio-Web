@@ -6,4 +6,4 @@ const External2 = () => {
   )
 }
 
-export default External2
+export default External2 
