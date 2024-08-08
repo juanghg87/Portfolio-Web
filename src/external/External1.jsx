@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import SideBar from '../components/sidebar/SideBar';
 
 const External1 = () => {
   return (
-    <div>External1</div>
+    <div>Global Fit
+      <SideBar />
+    </div>
+    
   )
 }
 

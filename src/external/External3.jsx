@@ -1,13 +1,12 @@
 import React from 'react';
 import Sidebar from '../components/sidebar/SideBar';
 
-const External2 = () => {
+const External3 = () => {
   return (
-    <div>Eduardo Ospina
-      <Sidebar />
-
+    <div>Leslie Nuñez
+        <Sidebar />
     </div>
   )
 }
 
-export default External2 
+export default External3

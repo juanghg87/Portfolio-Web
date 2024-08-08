@@ -1,20 +1,39 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './components/navbar/Navbar';
+import Parallax from './components/parallax/Parallax';
+import Services from './components/services/Services';
+import Portfolio from './components/portfolio/Portfolio';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <section>
+      <section id="Homepage">
         <Navbar/>
       </section>
-      <section>Parallax</section>
-      <section>Services</section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
-      <section>Contact</section>
+
+      <section id="Services">
+        <Parallax />
+      </section>
+
+      <section>
+        <Services />
+      </section>
+
+      <Portfolio id="Portfolio"/>
+
+      <section id="About">
+        <About />
+      </section>
+
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
   );
 }

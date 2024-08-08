@@ -1,12 +1,13 @@
 import "./navbar.scss";
 import React from 'react';
 import { motion } from "framer-motion";
+import SideBar from "../sidebar/SideBar";
 
 
 const Navbar = () => {
   return (
     <div className="navbar">
-
+      <SideBar />
       <div className="wrapper" >
         <motion.a
           initial={{ opacity: 0, scale: 0, x: 200, y: -100 }}
@@ -39,7 +40,7 @@ const Navbar = () => {
             <a href="">
               <img id="social-media3" className="social-media" src="./instagram.png" alt="instagram logo" title="Instagram Logo" />
             </a>
-            <a href="">
+            <a href="https://github.com/juanghg87" target="blank">
               <img id="social-media4" className="social-media" src="./github.png" alt="github logo" title="Github Logo" />
             </a>
           </div>
@@ -52,4 +53,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
