@@ -18,11 +18,11 @@ const variants = {
 };
 const itemVariants = {
     open: {
-        y: 0,
+        y: 50,
         opacity: 1,
     },
     closed: {
-        y: 50,
+        y: 0,
         opacity: 0,
     }
 }
@@ -46,7 +46,7 @@ const Links = () => {
                         whileTap={{ scale: 1.5 }}
                     >
                         {/* <Link to="/external1">Services</Link> */}
-                        <a href="#Services">Services</a>
+                        <a href="#Services" >Services</a>
                     </motion.li>
 
                     <motion.li

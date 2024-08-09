@@ -1,0 +1,193 @@
+@import "../../App.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+.hero {
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(82, 80, 81, 0.4)), url(../../../public/hero-backgrownd.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 35px;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.9));
+
+        img {
+            opacity: 0.8;
+        }
+    }
+
+    .slidingTextContainer {
+        z-index: 1;
+        position: absolute;
+        font-size: 20vh;
+        bottom: 0px;
+        white-space: nowrap;
+        color: #47444450;
+        font-family: "Grey Qo", cursive;
+        width: 100%;
+
+        @include tablet{
+            white-space: normal;
+            font-size: 15vh;
+        }
+
+        @include mobile{
+            white-space: normal;
+            font-size: 10vh;
+        }
+    }
+
+    .wrapper {
+        max-width: 800px;
+        height: 100%;
+        margin: auto;
+        right: 50px;
+        position: absolute;
+
+        .textContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            gap: 20px;
+
+            @include tablet {
+                height: 100%;
+                width: 100%;
+            }
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 120px;
+                color: white;
+                letter-spacing: 2px;
+                margin-top: 40px;
+                text-align: center;
+                font-family: "Grey Qo", cursive;
+                font-weight: 400;
+                font-style: normal;
+                color: #B68508;
+
+                @include tablet {
+                    text-align: center;
+                    font-size: 70px;
+                    margin-top: 70px;
+                }
+
+                @include mobile {
+                    font-size: 35px;
+                    margin-top: 70px;
+                }
+
+            }
+
+            h1 {
+                font-size: 58px;
+                color: rgba(0, 0, 0, 0.726);
+                text-align: right;
+                margin-right: 10px; 
+                letter-spacing: 2px;
+
+                @include tablet {
+                    text-align: center;
+                }
+
+                @include mobile {
+                    font-size: 50px;
+                    text-align: center;
+                }
+
+            }
+
+            .buttons {
+
+                @include tablet {
+                    height: 20%;
+                }
+
+                button {
+                    padding: 20px;
+                    border: 2px solid rgba(0, 0, 0, 0.322);
+                    border-radius: 10px;
+                    background-color: #ffffff40;
+                    color: rgba(0, 0, 0, 0.522);
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    z-index: 2;
+                    position: relative;
+                    left: 90px;
+
+                    @include tablet {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 30px;
+
+                    }
+
+                    @include mobile {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 10px;
+                        left: auto;
+                        top: 10px;
+                        margin: 10px;
+
+                        &:hover,
+                        &.touched {
+                            background-color: white;
+                            border: 2px solid rgba(0, 0, 0, 0.836);
+                            color: black;
+                            font-weight: bold;
+                            letter-spacing: 3px;
+                            box-shadow: 8px 8px 26px 0px #d32fda;
+                        }
+                    }
+                }
+
+                button:hover {
+                    background-color: white;
+                    border: 2px solid rgba(0, 0, 0, 0.836);
+                    color: black;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    box-shadow: 8px 8px 26px 0px #d32fda;
+                }
+            }
+
+            .scroll {
+                // background-color: #B68508;
+                z-index: 999;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top: -80px;
+                filter: hue-rotate(90deg);
+
+                @include tablet {
+                    margin: auto;
+                }
+
+                @include mobile {
+                    top: 0;
+                }
+
+            }
+        }
+    }
+}

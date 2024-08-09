@@ -6,6 +6,7 @@ import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import Hero from './components/hero/Hero';
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <section id="Homepage">
         <Navbar/>
+        <Hero/>
       </section>
 
       <section id="Services">
