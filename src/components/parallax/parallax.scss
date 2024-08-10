@@ -1,0 +1,101 @@
+@import "../../App.scss";
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+.parallax {
+    z-index: 1;
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(82, 80, 81, 0.4),rgba(255, 255, 255, 1)), url(../../../public/backgrownd-services3.jpg);
+    background-size: 100% 100%;
+
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include mobile {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 200px;
+        font-family: "Grey Qo", cursive;
+        letter-spacing: 5px;
+        font-weight: lighter;
+        color: rgba(0, 0, 0, 0.726);
+    }
+    span{
+        max-width: 300px;
+        font-size: 20px;
+        color: black;
+        text-align: justify;
+        font-weight: 200;
+    }
+
+    .parallax1{
+        background-image: url(../../../public/parallax1.png);;
+        background-size: cover;
+        width: 20%;
+        height: 60%;
+        position: absolute;
+        left: 80px;
+        bottom: 0;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3));
+
+        &:hover{
+            filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.9));
+        }
+        
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 20%;
+            left: 16% ;
+            top: 18%;
+            bottom: 0;
+            scale: 1;
+        }
+    }
+
+    .parallax2{
+        background-image: url(../../../public/parallax2.png);;
+        background-size: cover;
+        width: 45%;
+        height: 60%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3));
+
+        &:hover{
+            filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.9));
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            background-size: cover;
+            width: 80%;
+            height: 20%;
+            left: 11%;
+            top: 60%;            
+        }
+    }
+}

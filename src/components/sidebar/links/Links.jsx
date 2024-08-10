@@ -29,7 +29,7 @@ const itemVariants = {
 
 const Links = () => {
     return (
-        <motion.div className='links' variants={variants} >
+        <motion.div className='links' variants={variants}>
             <nav>
                 <motion.ul>
                     <motion.li
@@ -39,14 +39,13 @@ const Links = () => {
                     >
                         <Link to="/">Home</Link>
                     </motion.li>
-
+ 
                     <motion.li
                         variants={itemVariants}
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        {/* <Link to="/external1">Services</Link> */}
-                        <a href="#Services" >Services</a>
+                        <Link to="#Services" onClick={(e) => scrollToSection(e, 'Services')}>Services</Link>
                     </motion.li>
 
                     <motion.li
@@ -54,8 +53,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        {/* <Link to="/external1">Portfolio</Link> */}
-                        <a href="#Portfolio">Portfolio</a>
+                        <Link to="#Portfolio" onClick={(e) => scrollToSection(e, 'Portfolio')}>Portfolio</Link>
                     </motion.li>
 
                     <motion.li
@@ -63,7 +61,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external1" id='external_links'>Global Fit</Link>
+                        <Link to="/external1" id='external_links' target='_blank'>Global Fit</Link>
                     </motion.li>
 
                     <motion.li
@@ -71,7 +69,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external2" id='external_links'>Eduardo Ospina</Link>
+                        <Link to="/external2" id='external_links' target='_blank'>Eduardo Ospina</Link>
                     </motion.li>
 
                     <motion.li
@@ -79,7 +77,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external3" id='external_links'>Leslie Nuñez</Link>
+                        <Link to="/external3" id='external_links' target='_blank'>Leslie Nuñez</Link>
                     </motion.li>
 
                     <motion.li
@@ -87,8 +85,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        {/* <Link to="/external1">About</Link> */}
-                        <a href="#About">About</a>
+                        <Link to="#About" onClick={(e) => scrollToSection(e, 'About')}>About</Link>
                     </motion.li>
 
                     <motion.li
@@ -96,16 +93,22 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        {/* <Link to="/external1">Contact</Link> */}
-                        <a href="#Contact">Contact</a>
+                        <Link to="#Contact" onClick={(e) => scrollToSection(e, 'Contact')}>Contact</Link>
                     </motion.li>
-
                 </motion.ul>
             </nav>
             <br />
             <Outlet />
         </motion.div>
-    )
+    );
 }
 
-export default Links
+export default Links;
+
+const scrollToSection = (e, sectionId) => {
+    e.preventDefault();  
+    const section = document.getElementById(sectionId);  
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' }); 
+    }
+};

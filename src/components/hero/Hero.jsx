@@ -28,18 +28,18 @@ const textVariants = {
 
 const sliderVariants = {
     initial: {
-      x: 0,
+        x: 0,
     },
     animate: {
-      x: "37%",
-      opacity: 1,
-      transition: {
-        duration: 5,
-        repeat: 200,
-        repeatType: "reverse",
-      },
+        x: "37%",
+        opacity: 1,
+        transition: {
+            duration: 5,
+            repeat: 200,
+            repeatType: "reverse",
+        },
     },
-  }
+}
 
 const Hero = () => {
     return (
@@ -54,11 +54,16 @@ const Hero = () => {
                 <img src="./juang-photo.png" alt="Juan Guillero Photo" />
             </motion.div>
             <motion.div className="wrapper"
-            variants={
-                textVariants
-            }
+                variants={
+                    textVariants
+                }
             >
-                <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate" >
+                <motion.div
+                    className="textContainer"
+                    variants={textVariants}
+                    initial="initial"
+                    animate="animate" 
+                    >
                     <motion.h2 variants={textVariants} >Hi! I´m Juan...</motion.h2>
                     <motion.h1 variants={textVariants} >UX / UI designer <br /> Web Developer</motion.h1>
                     <motion.div variants={textVariants} className="buttons">

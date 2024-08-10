@@ -14,20 +14,23 @@ import Hero from './components/hero/Hero';
 function App() {
   return (
     <div className="App">
+
       <section id="Homepage">
-        <Navbar/>
-        <Hero/>
+        <Navbar />
+        <Hero />
       </section>
 
-      <section id="Services">
+      <section >
         <Parallax />
       </section>
 
-      <section>
+      <section id="Services">
         <Services />
       </section>
 
-      <Portfolio id="Portfolio"/>
+      <section id="Portfolio">
+        <Portfolio  />
+      </section>
 
       <section id="About">
         <About />
