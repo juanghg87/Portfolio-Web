@@ -61,7 +61,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external1" id='external_links' target='_blank'>Global Fit</Link>
+                        <Link to="/external1" id='external_links' >Global Fit</Link>
                     </motion.li>
 
                     <motion.li
@@ -69,7 +69,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external2" id='external_links' target='_blank'>Eduardo Ospina</Link>
+                        <Link to="/external2" id='external_links' >Eduardo Ospina</Link>
                     </motion.li>
 
                     <motion.li
@@ -77,7 +77,7 @@ const Links = () => {
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 1.5 }}
                     >
-                        <Link to="/external3" id='external_links' target='_blank'>Leslie Nuñez</Link>
+                        <Link to="/external3" id='external_links' >Leslie Nuñez</Link>
                     </motion.li>
 
                     <motion.li
