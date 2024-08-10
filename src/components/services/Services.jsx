@@ -94,21 +94,21 @@ const Services = () => {
                     <motion.p >
                         Smiling, playing and learning are important components of happiness. Transmit from parents to children the essentials for a life full of success and love. Teaching reminds us what it feels like to learn.
                     </motion.p>
-                    <Link to="/external1" target="blank"><button>UX/UI Design Web Developer</button></Link> 
+                    <Link to="/external1" ><button>UX/UI Design Web Developer</button></Link> 
                 </motion.div>
                 <motion.div className="box" id="psicoEduardo">
                     <h2>Eduardo Ospina</h2>
                     <p>
                         Mental health is a very personal issue, search within yourself and find a way out, learn and heal, through all those fears, phobias and sufferings that you carry within you.
                     </p>
-                    <Link to="/external2" target="blank"><button>UX/UI Design Web Developer</button></Link>
+                    <Link to="/external2" ><button>UX/UI Design Web Developer</button></Link>
                 </motion.div>
                 <motion.div className="box" id="leslie">
                     <h2>Leslie Nuñez</h2>
                     <p>
                         Look at yourself and smile it's easy. Admire your body and feel the way you always wanted. With our treatments you will find the figure you have wanted, it is safe, easy and possible.
                     </p>
-                    <Link to="/external3" target="blank"><button>UX/UI Design</button></Link>
+                    <Link to="/external3" ><button>UX/UI Design</button></Link>
                 </motion.div>
             </motion.div>
         </motion.div >
