@@ -1,2 +1,182 @@
-.portfolio{
+@import "../../App.scss";
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.portfolio {
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(27, 25, 26, 0.3)), url(../../../public/backgrownd-services3.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    object-fit: cover;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        text-align: end;
+
+        @include mobile {
+            padding-top: calc(100vh - 100px);
+            font-size: 24 px;
+        }
+
+        h1 {
+            color: orange;
+            font-size: 60px;
+            font-family: "Grey Qo";
+            margin: 0 20px 0 0;
+            letter-spacing: 10px;
+        }
+
+        .progressBar {
+            height: 5px;
+            background: linear-gradient(to right, orange, rgb(128, 109, 4), orange);
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .wrapper {
+            max-width: 1166px;
+            height: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            .imageContainer {
+                flex: 1;
+                height: 50%;
+                border: 1px solid gold;
+                border-radius: 20px;
+
+
+                @include mobile {
+                    border: none;
+                    text-align: center;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+
+                    @include mobile {
+                        object-fit: contain;
+                        width: 80%;
+                    }
+                }
+            }
+
+            .textContainer {
+                flex: 1;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                border-radius: 20px;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.678);
+                color: white;
+
+                @include tablet {
+                    margin-top: 30%;
+                }
+
+                @include mobile {
+                    transform: none !important;
+                    padding: 20px;
+                    align-items: center;
+                    text-align: center;
+                    height: 80%;
+                    border-radius: 0;
+                    margin-top: -10%;
+                }
+
+                h2 {
+                    font-size: 52px;
+                    color: #d3d3d3;
+
+                    @include mobile {
+                        font-size: 36px;
+                    }
+                }
+
+                p {
+                    color: #d3d3d3b7;
+                    font-size: 18px;
+                    text-align: justify;
+
+
+                    @include mobile {
+                        font-size: 16px;
+                    }
+
+                }
+
+                button {
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 1;
+                    background-color: #d3d3d3f1;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                    color: black;
+                    transition: all transform 0.45s ease-in-out;
+                }
+                    button::before {
+                        content: '';
+                        z-index: -1;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 1em;
+                        height: 1em;
+                        border-radius: 50%;
+                        background-color: orange;
+                        transform-origin: center;
+                        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+                        transition: transform 0.45s ease-in-out;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        color: #161616;
+                        border: none;
+                        font-weight: bolder;
+                    }
+
+                    button:hover::before {
+                        transform: translate3d(-50%, -50%, 0) scale3d(20, 20, 20);
+                    }
+
+                    // &:hover{
+                    //     background-color: orange;
+                    //     transition: all ease-in-out 0.5s;
+                    //     border: none;
+                    //     font-weight: bolder;
+                    // }
+                
+            }
+        }
+    }
 }

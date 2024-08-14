@@ -55,6 +55,7 @@ const Links = () => {
                     >
                         <Link to="#Portfolio" onClick={(e) => scrollToSection(e, 'Portfolio')}>Portfolio</Link>
                     </motion.li>
+                    
 
                     <motion.li
                         variants={itemVariants}
