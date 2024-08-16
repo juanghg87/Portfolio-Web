@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Web/build/static/css/main.3012730e.css",
-    "main.js": "/Portfolio-Web/build/static/js/main.c8f6ae0c.js",
+    "main.css": "/Portfolio-Web/build/static/css/main.8bf11d54.css",
+    "main.js": "/Portfolio-Web/build/static/js/main.1fa8f6bd.js",
     "static/js/453.90a7b0b2.chunk.js": "/Portfolio-Web/build/static/js/453.90a7b0b2.chunk.js",
     "static/media/globalFit.gif": "/Portfolio-Web/build/static/media/globalFit.bd1b8563603cc5c81185.gif",
     "static/media/parallax2.png": "/Portfolio-Web/build/static/media/parallax2.fb32c9a69da11d0cd917.png",
@@ -11,12 +11,12 @@
     "static/media/backgrownd-services3.jpg": "/Portfolio-Web/build/static/media/backgrownd-services3.431e8c33e63f75e4d104.jpg",
     "static/media/parallax1.png": "/Portfolio-Web/build/static/media/parallax1.b5629b2a0ac1e42d487d.png",
     "index.html": "/Portfolio-Web/build/index.html",
-    "main.3012730e.css.map": "/Portfolio-Web/build/static/css/main.3012730e.css.map",
-    "main.c8f6ae0c.js.map": "/Portfolio-Web/build/static/js/main.c8f6ae0c.js.map",
+    "main.8bf11d54.css.map": "/Portfolio-Web/build/static/css/main.8bf11d54.css.map",
+    "main.1fa8f6bd.js.map": "/Portfolio-Web/build/static/js/main.1fa8f6bd.js.map",
     "453.90a7b0b2.chunk.js.map": "/Portfolio-Web/build/static/js/453.90a7b0b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3012730e.css",
-    "static/js/main.c8f6ae0c.js"
+    "static/css/main.8bf11d54.css",
+    "static/js/main.1fa8f6bd.js"
   ]
 }

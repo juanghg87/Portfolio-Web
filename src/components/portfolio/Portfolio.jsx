@@ -53,7 +53,7 @@ const Single = ({ item }) => {
                 <div className="wrapper">
                     <motion.div className="imageContainer" ref={ref} whileHover={{
                         transition: { duration: 1 },
-                        scale: 1.15,
+                        scale: 1.05,
                     }} >
                         <img src={item.img} alt="" />
                     </motion.div>
@@ -65,9 +65,6 @@ const Single = ({ item }) => {
                     }} >
                         <motion.h2 whileHover={{ scale: 1.07 }} >{item.title}</motion.h2>
                         <p> {item.description} </p>
-                        {/* <Link  target="_blank">
-                            <button>View Case Study</button>
-                        </Link> */}
                         <a href={item.link}target="_blank">
                             <button>View Case Study</button>
                         </a>

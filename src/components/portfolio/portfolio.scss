@@ -1,9 +1,12 @@
 @import "../../App.scss";
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+
+//, url(../../../public/backgrownd-services3.jpg)
 .portfolio {
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(27, 25, 26, 0.3)), url(../../../public/backgrownd-services3.jpg);
+    //background: linear-gradient(rgba(255, 255, 255, 0), rgba(27, 25, 26, 0.3));
+    background: #e0e0e0;
     background-position: center center;
     background-size: 100% 100%;
     object-fit: cover;
@@ -61,8 +64,10 @@
             .imageContainer {
                 flex: 1;
                 height: 50%;
-                border: 1px solid gold;
+                // border: 1px solid gold;
                 border-radius: 20px;
+                box-shadow: -23px 23px 46px #5a5a5a,
+                    23px -23px 46px #ffffff;
 
 
                 @include mobile {
@@ -92,8 +97,10 @@
                 gap: 30px;
                 border-radius: 20px;
                 padding: 20px;
-                background-color: rgba(0, 0, 0, 0.678);
-                color: white;
+                background: #e0e0e0;
+                //background-color: rgba(0, 0, 0, 0.678);
+                box-shadow: -8px 8px 16px #5a5a5a,
+                    8px -8px 16px #ffffff;
 
                 @include tablet {
                     margin-top: 30%;
@@ -111,7 +118,7 @@
 
                 h2 {
                     font-size: 52px;
-                    color: #d3d3d3;
+                    color: rgba(0, 0, 0, 0.678);
 
                     @include mobile {
                         font-size: 36px;
@@ -119,7 +126,7 @@
                 }
 
                 p {
-                    color: #d3d3d3b7;
+                    color: rgba(0, 0, 0, 0.678);
                     font-size: 18px;
                     text-align: justify;
 
@@ -134,48 +141,42 @@
                     overflow: hidden;
                     position: relative;
                     z-index: 1;
-                    background-color: #d3d3d3f1;
-                    border: 1px solid black;
+                    background-color: rgba(0, 0, 0, 0.678);
+                    border: none;
                     border-radius: 5px;
                     padding: 10px;
                     width: 200px;
-                    cursor: pointer;
-                    color: black;
+                    color: #e0e0e0;
                     transition: all transform 0.45s ease-in-out;
+                    box-shadow: -5px 5px 10px #5a5a5a,
+                        5px -5px 10px #ffffff
                 }
-                    button::before {
-                        content: '';
-                        z-index: -1;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        width: 1em;
-                        height: 1em;
-                        border-radius: 50%;
-                        background-color: orange;
-                        transform-origin: center;
-                        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-                        transition: transform 0.45s ease-in-out;
-                    }
 
-                    button:hover {
-                        cursor: pointer;
-                        color: #161616;
-                        border: none;
-                        font-weight: bolder;
-                    }
+                button::before {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 1em;
+                    height: 1em;
+                    border-radius: 50%;
+                    background-color: orange;
+                    transform-origin: center;
+                    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+                    transition: transform 0.45s ease-in-out;
+                }
 
-                    button:hover::before {
-                        transform: translate3d(-50%, -50%, 0) scale3d(20, 20, 20);
-                    }
+                button:hover {
+                    cursor: pointer;
+                    color: #161616;
+                    border: none;
+                    font-weight: bolder;
+                }
 
-                    // &:hover{
-                    //     background-color: orange;
-                    //     transition: all ease-in-out 0.5s;
-                    //     border: none;
-                    //     font-weight: bolder;
-                    // }
-                
+                button:hover::before {
+                    transform: translate3d(-50%, -50%, 0) scale3d(20, 20, 20);
+                }
             }
         }
     }
