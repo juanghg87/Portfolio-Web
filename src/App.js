@@ -4,10 +4,10 @@ import Navbar from './components/navbar/Navbar';
 import Parallax from './components/parallax/Parallax';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
-import Portfolio_preview from './components/portfolio/Portfolio_preview';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Hero from './components/hero/Hero';
+import Cursor from './components/cursor/Cursor';
 
 
 
@@ -15,7 +15,7 @@ import Hero from './components/hero/Hero';
 function App() {
   return (
     <div className="App">
-
+      <Cursor/>
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -31,7 +31,7 @@ function App() {
 
       <section id="Portfolio">
       <Parallax />
-        {/* <Portfolio_preview /> */}
+      
       </section>
 
       <Portfolio />
