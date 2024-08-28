@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-Web/build/static/css/main.10eeec8c.css",
+    "main.css": "/Portfolio-Web/build/static/css/main.fa82da67.css",
     "main.js": "/Portfolio-Web/build/static/js/main.cc6532db.js",
     "static/js/453.90a7b0b2.chunk.js": "/Portfolio-Web/build/static/js/453.90a7b0b2.chunk.js",
-    "static/media/globalFit.gif": "/Portfolio-Web/build/static/media/globalFit.bd1b8563603cc5c81185.gif",
-    "static/media/parallax2.png": "/Portfolio-Web/build/static/media/parallax2.fb32c9a69da11d0cd917.png",
-    "static/media/mental-health.jpg": "/Portfolio-Web/build/static/media/mental-health.7b09a4cf6d1b801fd45a.jpg",
-    "static/media/leslie.PNG": "/Portfolio-Web/build/static/media/leslie.ab79679a7705c51f3201.PNG",
-    "static/media/hero-backgrownd.jpg": "/Portfolio-Web/build/static/media/hero-backgrownd.7bf0d9380fb7d10a668a.jpg",
-    "static/media/backgrownd-services3.jpg": "/Portfolio-Web/build/static/media/backgrownd-services3.431e8c33e63f75e4d104.jpg",
-    "static/media/parallax1.png": "/Portfolio-Web/build/static/media/parallax1.b5629b2a0ac1e42d487d.png",
+    "static/media/globalFit.gif": "/Portfolio-Web/build/static/media/globalFit.990f4e1521fea3f6e2f2.gif",
+    "static/media/parallax2.png": "/Portfolio-Web/build/static/media/parallax2.74c8c5889d7793d2d610.png",
+    "static/media/hero-backgrownd.jpg": "/Portfolio-Web/build/static/media/hero-backgrownd.635ebb443a89528f2be2.jpg",
+    "static/media/backgrownd-services3.jpg": "/Portfolio-Web/build/static/media/backgrownd-services3.c7efe68b0f2298fcd901.jpg",
+    "static/media/mental-health.jpg": "/Portfolio-Web/build/static/media/mental-health.88808ca669620c05cb06.jpg",
+    "static/media/leslie.PNG": "/Portfolio-Web/build/static/media/leslie.798d38d513e26f65841b.PNG",
+    "static/media/parallax1.png": "/Portfolio-Web/build/static/media/parallax1.c111842b717efac0b3a3.png",
     "index.html": "/Portfolio-Web/build/index.html",
-    "main.10eeec8c.css.map": "/Portfolio-Web/build/static/css/main.10eeec8c.css.map",
+    "main.fa82da67.css.map": "/Portfolio-Web/build/static/css/main.fa82da67.css.map",
     "main.cc6532db.js.map": "/Portfolio-Web/build/static/js/main.cc6532db.js.map",
     "453.90a7b0b2.chunk.js.map": "/Portfolio-Web/build/static/js/453.90a7b0b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10eeec8c.css",
+    "static/css/main.fa82da67.css",
     "static/js/main.cc6532db.js"
   ]
 }
