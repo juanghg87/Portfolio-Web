@@ -35,13 +35,20 @@ export const About = () => {
     <motion.div className='mainContainer' ref={ref} variants={container} initial="hidden" animate={isInView} whileInView="visible" >
       <motion.div className='textContainer' variants={variants} >
         <motion.h2 className='overview' >
-           Overview
-           <hr /> 
+          Overview
+          <hr />
         </motion.h2>
       </motion.div>
+      <div className='resumeContainer'>
       <motion.p className='presentation' variants={variants} >
-      <b>Hi again!</b> I bring a wealth of expertise to the table, particularly in UX/UI design and frontend development. With a solid background, I've successfully spearheaded 4 projects, guiding two from UX inception to refined UI implementation. Complementing this, I hold backend skills and a proven history of educating in both frontend and backend domains. My portfolio underscores my unwavering commitment to crafting compelling digital solutions and nurturing technological fluency.
+        <b>Hi again!</b> I bring a wealth of experience, particularly in UX/UI design and frontend development. With a solid background, I have successfully led projects as a Freelance, guiding from the beginning of UX to UI implementation. Additionally, I have backend and database skills that allow for more ideal application deployment.
+        <br />
+        <a href="https://drive.google.com/file/d/1HM8n0qz1BP1M4xeUhKbtampA8GLHH6Hh/view?usp=drive_link" target='_blank'>
+          <button>Resume</button>
+        </a>
       </motion.p>
+      </div>
+      
 
       <div className='cardsContainer' >
         <div className='cards' >
@@ -58,7 +65,7 @@ export const About = () => {
               <img src="./icon-bootstrap.png" alt="Bootstrap" />
             </motion.div>
           </motion.div>
-        </div> 
+        </div>
 
         <div className='cards' >
           <motion.div className="contenedor" variants={variants}>
@@ -67,11 +74,11 @@ export const About = () => {
               <img src="./icons-backend.png" alt="" />
             </motion.div>
             <motion.div className="containerItem2">
-            <img src="./icon-java.png" alt="Java" />
-            <img src="./icon-json.png" alt="Json" />
-            <img src="./icon-mysql.png" alt="MySql" />
-            <img src="./icon-php.png" alt="PHP" />
-            <img src="./icon-python.png" alt="Python" />
+              <img src="./icon-java.png" alt="Java" />
+              <img src="./icon-json.png" alt="Json" />
+              <img src="./icon-mysql.png" alt="MySql" />
+              <img src="./icon-php.png" alt="PHP" />
+              <img src="./icon-python.png" alt="Python" />
             </motion.div>
           </motion.div>
         </div>
@@ -83,8 +90,8 @@ export const About = () => {
               <img src="./icon-ux-designer.png" alt="" />
             </motion.div>
             <motion.div className="containerItem2">
-            <img src="./icon-figma.png" alt="Figma" />
-            <img src="./icon-xd.png" alt="Adobe XD" />
+              <img src="./icon-figma.png" alt="Figma" />
+              <img src="./icon-xd.png" alt="Adobe XD" />
             </motion.div>
           </motion.div>
         </div>

@@ -35,15 +35,12 @@
 
     .presentation {
         text-align: justify;
-        font-size: 20px;
+        font-size: 16px;
         padding: 1% 5% 1% 5%;
         margin: 2% 0%;
         background-color: rgba(0, 0, 0, 0.678);
-        column-count: 2;
         color: white;
-        letter-spacing: 1px;
         font-weight: 300;
-        // border-radius: 20px;
 
         @include tablet {
             margin: 10%;
@@ -56,6 +53,49 @@
             padding: 20px;
             margin: 0;
         }
+    }
+
+    button {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.678);
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        color: #e0e0e0;
+        transition: all transform 0.45s ease-in-out;
+        font-size: 40px;
+        font-family: "Grey Qo";
+        letter-spacing: 4px;
+        margin-top: 20px;
+        margin-left: 42%;
+    }
+
+    button::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: orange;
+        transform-origin: center;
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+        transition: transform 0.45s ease-in-out;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: #161616;
+        border: none;
+        font-weight: bolder;
+    }
+
+    button:hover::before {
+        transform: translate3d(-50%, -50%, 0) scale3d(20, 20, 20);
     }
 
     .cardsContainer {
@@ -91,7 +131,6 @@
                 width: 150px;
                 height: 110px;
             }
-
         }
 
         h2 {
@@ -103,6 +142,7 @@
                 text-align: center;
             }
         }
+
 
         .contenedor img {
             width: 30%;

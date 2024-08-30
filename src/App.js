@@ -15,14 +15,14 @@ import Cursor from './components/cursor/Cursor';
 function App() {
   return (
     <div className="App">
-      <Cursor/>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
 
       <section >
-        <Parallax />
+        <Parallax type="services"/>
       </section>
 
       <section id="Services">
@@ -30,8 +30,7 @@ function App() {
       </section>
 
       <section id="Portfolio">
-      <Parallax />
-      
+        <Parallax type="portfolio"/>
       </section>
 
       <Portfolio />
