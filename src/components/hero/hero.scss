@@ -11,6 +11,10 @@
     position: relative;
     display: flex;
 
+    @include mobile{
+        height: calc(100vh - 100px);
+    }
+
     .imageContainer {
         height: 100%;
         position: absolute;
@@ -18,9 +22,28 @@
         filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.9));
         z-index: 3;
 
+        @include tablet{
+            display: flex;
+            align-items: end;
+            bottom: 0;
+        }
+
+        @include mobile{
+            right: -50%;
+        }
+
         img {
             opacity: 0.8;
             z-index: 3;
+
+            @include tablet{
+                height: 60%;
+                bottom: 0;
+            }
+
+            @include mobile{
+                height: 60%;
+            }
         }
     }
 
@@ -35,13 +58,16 @@
         width: 100%;
 
         @include tablet{
-            white-space: normal;
-            font-size: 15vh;
+            white-space: nowrap;
+            font-size: 12vh;
+            bottom: 100px;
         }
 
         @include mobile{
-            white-space: normal;
+            white-space: nowrap;
             font-size: 10vh;
+            width: 50%;
+            bottom: 0;
         }
     }
 
@@ -49,9 +75,15 @@
         z-index: 3;
         max-width: 800px;
         height: 100%;
-        margin: auto;
         right: 50px;
         position: absolute;
+
+        @include tablet{
+            right: 13%;
+        }
+        @include mobile{
+            right: 1%;
+        }
 
         .textContainer {
             width: 100%;
@@ -64,6 +96,7 @@
             @include tablet {
                 height: 100%;
                 width: 100%;
+                align-items: center;
             }
 
             @include mobile {
@@ -91,8 +124,8 @@
                 }
 
                 @include mobile {
-                    font-size: 35px;
-                    margin-top: 70px;
+                    font-size: 80px;
+                    margin-top: 10%;
                 }
 
             }
@@ -109,13 +142,17 @@
                 }
 
                 @include mobile {
-                    font-size: 50px;
+                    font-size: 40px;
                     text-align: center;
                 }
 
             }
 
             .buttons {
+                @include mobile{
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 @include tablet {
                     height: 20%;
@@ -173,7 +210,6 @@
             }
 
             .scroll {
-                // background-color: #B68508;
                 z-index: 999;
                 width: 50px;
                 height: 50px;
@@ -182,11 +218,11 @@
                 filter: hue-rotate(90deg);
 
                 @include tablet {
-                    margin: auto;
+                    top: 30%;
                 }
 
                 @include mobile {
-                    top: 0;
+                    top: 40%;
                 }
 
             }

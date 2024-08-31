@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    color: white;
+    color: white; 
 
     .bg {
         position: fixed;
@@ -16,6 +16,14 @@
         left: 0;
         width: 400px;
         background: white;
+
+        @include tablet{
+
+        }
+
+        @include mobile{
+            
+        }
 
         .links {
             z-index: 999;
@@ -30,6 +38,13 @@
             justify-content: center;
             gap: 20px;
 
+            @include tablet{
+                width: 30%;
+            }
+            @include mobile{
+                width: 50%;
+            }
+
             ul {
                 list-style-type: none; 
                 padding: 0;
@@ -38,7 +53,15 @@
             a {
                 font-size: 2em;
                 text-decoration: none;
+
+                @include tablet{
+
+                }
+                @include mobile{
+                    font-size: 2em;
+                }
             }
+
         }
     }
 
