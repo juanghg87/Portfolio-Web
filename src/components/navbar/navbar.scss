@@ -8,7 +8,7 @@
     border-bottom-right-radius: 150px;
 
     @include mobile{
-        height: 100px;
+        height: 70px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -50,9 +50,10 @@
             margin: 0px 10px 0px 10px;
             transition: all .5s;
 
+
             @include mobile{
                 margin: 0px 4px 0px 4px;
-                height: 25px;
+                height: 1.8rem;
             }
             
         }
