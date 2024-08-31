@@ -9,19 +9,6 @@ const Navbar = () => {
     <div className="navbar">
       <SideBar />
       <div className="wrapper" >
-        <motion.a
-          initial={{ opacity: 0, scale: 0, x: 200, y: -100 }}
-          animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
-          transition={{ duration: 1.5 }} 
-          whileHover= {{opacity: 2,scale: 1.15}}
-          whileInView={{scale: 1.1}}
-          drag
-          href="">
-          <img
-            className="logo-text-white"
-            src="./logo-text-white.png"
-            alt="juang logo" title="JuanG" />
-        </motion.a>
 
         <motion.a
           initial={{ opacity: 0, scale: 0, x: -200, y: -100 }}
@@ -44,7 +31,19 @@ const Navbar = () => {
               <img id="social-media4" className="social-media" src="./github.png" alt="github logo" title="Github Logo" />
             </a>
           </div>
-
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, scale: 0, x: 200, y: -100 }}
+          animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+          transition={{ duration: 1.5 }} 
+          whileHover= {{opacity: 2,scale: 1.15}}
+          whileInView={{scale: 1.1}}
+          drag
+          href="">
+          <img
+            className="logo-text-white"
+            src="./logo-text-white.png"
+            alt="juang logo" title="JuanG" />
         </motion.a>
 
 

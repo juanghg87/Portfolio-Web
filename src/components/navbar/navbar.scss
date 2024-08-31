@@ -22,11 +22,12 @@
         height: 100%;
 
         @include tablet{
-            max-width: 600px;
+            max-width: 500px;
         }
         @include mobile{
-            max-width: 280px;
+            max-width: 75%;
             justify-content: space-around;
+            margin-right: 0;
         }
         .logo-text-white {
             height: 100px;
