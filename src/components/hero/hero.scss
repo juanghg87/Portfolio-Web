@@ -12,7 +12,7 @@
     display: flex;
 
     @include mobile{
-        height: calc(100vh - 50px);
+        height: calc(100vh - 70px);
     }
 
     .imageContainer {
@@ -31,11 +31,16 @@
         @include mobile{
             width: 100%;
             top: 0%;
+            // background-color: #d32fda;
+            // height: 90%;
         }
 
         img {
+            height: 100%;
             opacity: 0.8;
             z-index: 3;
+            bottom: 0;
+            position: absolute;
 
             @include tablet{
                 height: 60%;
