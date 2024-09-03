@@ -3,7 +3,7 @@
 
 
 .services {
-    background: linear-gradient( rgba(255, 255, 255, 0), rgba(27, 25, 26, 0.3)), url(../../../public/backgrownd-services3.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(27, 25, 26, 0.3)), url(../../../public/backgrownd-services3.jpg);
     background-size: 100% 100%;
     height: 100%;
     display: flex;
@@ -22,10 +22,21 @@
         gap: 10px;
 
         @include mobile {
-            flex-direction: column;
+            // flex-direction: column;
+            // gap: 0;
+            // display: none;
+            flex: none;
+
+            // font-size: 0.7rem;
         }
-        @include tablet{
-            display: grid;
+
+        @include tablet {
+            // display: grid;
+            // flex: none;
+            // gap: 0;
+            // background-color: #B68508;
+            flex: none;
+            flex-direction: column;
         }
 
         hr {
@@ -34,7 +45,13 @@
             border-top: 0.5px solid black;
 
             @include mobile {
+                width: 50%;
+                gap: 0;
+                margin: 0;
+            }
+            @include tablet{
                 width: 100%;
+                // right: 0;
             }
         }
 
@@ -46,13 +63,19 @@
             font-family: "Montagu Slab", serif;
 
             @include mobile {
-                align-self: center;
-                text-align: right;
-                flex-direction: column;
-                font-size: 16px;
-                margin-right: 5px;
-                margin-top: 5%;
+                max-width: 80%;
+                margin: auto;
+                // text-align: right;
+                font-size: 0.9rem !important;
+                margin-top: 5px;
+                font-size: 200px;
+                // background-color: cadetblue;
+            }
 
+            @include tablet{
+                font-size: 1.3rem;
+                // max-width: 70%;
+                text-align: center;
             }
         }
     }
@@ -62,13 +85,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
 
         @include mobile {
-            width: 100%;
-            height: 100%;
+            flex: 1;
+            // max-height: 100px;
+            padding: 5px 0 0 0 !important;
         }
-        @include tablet{
-            flex-direction: column;
+
+        @include tablet {
+            // background-color: #B68508;
+            text-align: left;
+            // display: flex;
+            // flex-direction: column;
+            flex: none;
+            // display: block;
+            padding: 6%;
+            // flex-direction: column;
+            // text-align: center;
+            // background-color: #B68508;
         }
 
 
@@ -78,24 +113,27 @@
             gap: 50px;
             color: rgba(0, 0, 0, 0.726);
 
+            @include tablet{
+                flex: none;
+                gap: 0px;
+                // text-align: left;
+            }
+
             @include mobile {
                 width: 100%;
-                height: 30%;
                 flex-direction: column;
                 text-align: center;
                 gap: 10px;
+                // background-color: aqua;
 
-            
-
-                // h1 {
-                //     b {
-                //         font-family: "Grey Qo", cursive;
-                //         &:hover {
-                //             color: orange;
-                //             transition: all ease 0.5s;
-                //         }
-                //     }
-                // }
+                h1 {
+                    b {
+                        &:hover {
+                            color: orange;
+                            transition: all ease 0.5s;
+                        }
+                    }
+                }
             }
 
 
@@ -104,9 +142,14 @@
                 font-weight: 100;
                 color: rgba(0, 0, 0, 0.726);
 
+                @include tablet{
+                    font-size: 3rem;
+                    text-align: left;
+                }
+
                 @include mobile {
-                    font-size: 36px;
-                    margin: 0;
+                    font-size: 1.9rem;
+                    margin: 5% 0 0 0;
                 }
             }
 
@@ -122,15 +165,23 @@
                 -webkit-box-shadow: 37px 32px 71px 0px rgba(0, 0, 0, 0.65);
                 -moz-box-shadow: 37px 32px 71px 0px rgba(0, 0, 0, 0.65);
 
-                &:hover{
+                &:hover {
                     transition: all ease-in 0.5s;
                     background-color: orange;
                     color: black;
                 }
 
+                @include tablet{
+                    // display: flex;
+                    // display: inline-block;
+                    min-width: 50%;
+                    height: 50%;
+                    font-size: 3rem;
+                }
+
                 @include mobile {
-                    font-size: 30px;
-                    width: 80%;
+                    font-size: 2rem;
+                    width: 50%;
                     height: 50%;
 
                     &:hover {
@@ -142,19 +193,27 @@
     }
 
     .listContainer {
-        flex: 2;
+        flex: 1;
         display: flex;
         max-width: 95%;
         margin: auto;
 
-        @include mobile {
+        @include tablet{
+            max-height: 100%;
             display: flex;
             flex-direction: column;
-            column-count: 2;
-            justify-content: center;
-            align-items: center;
+            gap: 5%;
+        }
+
+        @include mobile {
+            flex: 1;
+            // display: flex;
+            flex-direction: column;
+            // column-count: 2;
+            // justify-content: center;
+            // align-items: center;
             width: 100%;
-            margin-top: -25%;
+            margin-top: 5%;
         }
 
 
@@ -173,13 +232,42 @@
             box-shadow: 0px 31px 31px 11px rgba(0, 0, 0, 0.39);
             background-color: #d3d3d300;
 
+            @include tablet{
+                // height: 160px;
+                // margin-top: 20px;
+                padding: 2%;
+            }
+
             @include mobile {
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                padding: 10px;
-                height: 24%;
+                // justify-content: center;
+                // align-items: center;
+                // gap: 30px;
+                // padding: 10px;
+                height: 30%;
                 margin: 5px;
+
+                button{
+                    display: none;
+                }
+
+                &.box#globalFit {
+                    background-image: url("../../../public/globalFit.gif");
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &.box#psicoEduardo {
+                    background-image: url("../../../public/mental-health.jpg");
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &.box#leslie {
+                    background-image: url("../../../public/leslie.PNG");
+                    background-size: cover;
+                    background-position: center;
+                }
+
             }
         }
 
@@ -191,14 +279,19 @@
             background-size: cover;
             border: none;
 
+            @include tablet{
+                // margin-top: 10%;
+            }
+
             @include mobile {
-                transform: scale(1.5);
-                width: 70%;
-                height: 20%;
+                transform: scale(1.9);
+                // width: 10%;
+                height: 100%;
 
                 button {
-                    background-color: transparent;
-                    color: transparent;
+                    // background-color: transparent;
+                    // color: transparent;
+                    display: none;
                 }
             }
 
@@ -213,13 +306,14 @@
             border: none;
 
             @include mobile {
-                transform: scale(1.5);
-                width: 70%;
-                height: 20%;
+                transform: scale(1.9);
+                // width: 70%;
+                height: 100%;
 
                 button {
-                    background-color: transparent;
-                    color: transparent;
+                    // background-color: transparent;
+                    // color: transparent;
+                    display: none;
                 }
             }
 
@@ -234,13 +328,14 @@
             border: none;
 
             @include mobile {
-                transform: scale(1.5);
-                width: 70%;
-                height: 20%;
+                transform: scale(1.9);
+                // width: 70%;
+                height: 100%;
 
                 button {
-                    background-color: transparent;
-                    color: transparent;
+                    // background-color: transparent;
+                    // color: transparent;
+                    display: none;
                 }
             }
 
@@ -256,16 +351,27 @@
             transition: color 0.5s ease-in-out;
             text-align: justify;
 
+            @include tablet{
+                font-size: 1.25rem;
+            }
+
             @include mobile {
                 display: none;
             }
- 
+
         }
 
         .box h2 {
             color: #1b191a;
             transition: color 0.5s ease-in-out;
-            font-size: 20px;
+            
+            @include tablet{
+                font-size: 1.9rem;
+            }
+
+            @include mobile {
+                font-size: 1.5rem;
+            }
         }
 
         .box:hover p,
@@ -274,7 +380,7 @@
         }
 
         .box button {
-            overflow:  hidden;
+            overflow: hidden;
             position: relative;
             z-index: 1;
             padding: 10px;
@@ -297,6 +403,7 @@
 
             }
         }
+
         .box button::before {
             content: '';
             z-index: -1;

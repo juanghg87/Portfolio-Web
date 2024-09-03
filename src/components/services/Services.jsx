@@ -94,7 +94,7 @@ const Services = () => {
                     <motion.p >
                         Smiling, playing and learning are important components of happiness. Transmit from parents to children the essentials for a life full of success and love. Teaching reminds us what it feels like to learn.
                     </motion.p>
-                    <Link to="/external1" ><button>UX/UI Design Web Developer</button></Link> 
+                    <Link to="/external1" ><button  className="buttonCaseStudy">UX/UI Design Web Developer</button></Link> 
                 </motion.div>
                 <motion.div className="box" id="psicoEduardo">
                     <h2>Eduardo Ospina</h2>
