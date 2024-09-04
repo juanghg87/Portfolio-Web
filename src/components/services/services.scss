@@ -22,19 +22,10 @@
         gap: 10px;
 
         @include mobile {
-            // flex-direction: column;
-            // gap: 0;
-            // display: none;
             flex: none;
-
-            // font-size: 0.7rem;
         }
 
         @include tablet {
-            // display: grid;
-            // flex: none;
-            // gap: 0;
-            // background-color: #B68508;
             flex: none;
             flex-direction: column;
         }
@@ -51,7 +42,6 @@
             }
             @include tablet{
                 width: 100%;
-                // right: 0;
             }
         }
 
@@ -65,16 +55,13 @@
             @include mobile {
                 max-width: 80%;
                 margin: auto;
-                // text-align: right;
                 font-size: 0.9rem !important;
                 margin-top: 5px;
                 font-size: 200px;
-                // background-color: cadetblue;
             }
 
             @include tablet{
                 font-size: 1.3rem;
-                // max-width: 70%;
                 text-align: center;
             }
         }
@@ -89,21 +76,13 @@
 
         @include mobile {
             flex: 1;
-            // max-height: 100px;
             padding: 5px 0 0 0 !important;
         }
 
         @include tablet {
-            // background-color: #B68508;
             text-align: left;
-            // display: flex;
-            // flex-direction: column;
             flex: none;
-            // display: block;
             padding: 6%;
-            // flex-direction: column;
-            // text-align: center;
-            // background-color: #B68508;
         }
 
 
@@ -116,7 +95,6 @@
             @include tablet{
                 flex: none;
                 gap: 0px;
-                // text-align: left;
             }
 
             @include mobile {
@@ -124,7 +102,6 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 10px;
-                // background-color: aqua;
 
                 h1 {
                     b {
@@ -172,8 +149,6 @@
                 }
 
                 @include tablet{
-                    // display: flex;
-                    // display: inline-block;
                     min-width: 50%;
                     height: 50%;
                     font-size: 3rem;
@@ -207,11 +182,7 @@
 
         @include mobile {
             flex: 1;
-            // display: flex;
             flex-direction: column;
-            // column-count: 2;
-            // justify-content: center;
-            // align-items: center;
             width: 100%;
             margin-top: 5%;
         }
@@ -233,16 +204,10 @@
             background-color: #d3d3d300;
 
             @include tablet{
-                // height: 160px;
-                // margin-top: 20px;
                 padding: 2%;
             }
 
             @include mobile {
-                // justify-content: center;
-                // align-items: center;
-                // gap: 30px;
-                // padding: 10px;
                 height: 30%;
                 margin: 5px;
 
@@ -279,18 +244,11 @@
             background-size: cover;
             border: none;
 
-            @include tablet{
-                // margin-top: 10%;
-            }
-
             @include mobile {
                 transform: scale(1.9);
-                // width: 10%;
                 height: 100%;
 
                 button {
-                    // background-color: transparent;
-                    // color: transparent;
                     display: none;
                 }
             }
@@ -307,12 +265,9 @@
 
             @include mobile {
                 transform: scale(1.9);
-                // width: 70%;
                 height: 100%;
 
                 button {
-                    // background-color: transparent;
-                    // color: transparent;
                     display: none;
                 }
             }
@@ -329,12 +284,9 @@
 
             @include mobile {
                 transform: scale(1.9);
-                // width: 70%;
                 height: 100%;
 
                 button {
-                    // background-color: transparent;
-                    // color: transparent;
                     display: none;
                 }
             }
@@ -389,13 +341,6 @@
             border-radius: 5px;
             color: #e0e0e0;
             border: 1px solid black;
-
-            // &:hover{
-            //     background-color: orange;
-            //     transition: all ease-in-out 0.5s;
-            //     border: none;
-            //     font-weight: bolder;
-            // }
 
             @include mobile {
                 padding: 5px;
