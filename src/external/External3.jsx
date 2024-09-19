@@ -153,9 +153,9 @@ const External3 = () => {
         </div>
 
         <div class="container-iframe">
-          {/* <iframe
+          <iframe
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTzFIyCADpZGEi5GQ3ut14g%2FGlobal-Fit%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DAX899RvIDBliCt78-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign"
-            allowfullscreen></iframe> */}
+            allowfullscreen></iframe>
 
           <div class="p-iframe">
             <h3 className='h3-iframe'>
@@ -171,9 +171,9 @@ const External3 = () => {
               The use of color contrasts is key to maintaining the identity of the professional, serving as a visual reference for inclusive navigation in accordance with international standards. As users explore the site, navigation becomes more fluid, based on their previous experiences. The elements are strategically located to optimize the navigation flow, allowing you to easily find what you are looking for. Although the design highlights important aspects of the practice, in some cases it can influence the location of options such as scheduling an appointment or accessing specific resources. However, navigation remains simple and focused on the content, prioritizing user well-being over structural complexity.
             </p>
           </div>
-          {/* <iframe loading="lazy"
+          <iframe loading="lazy"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrYrcznV01nHXuyvRVOJ3i5%2FLeslie-Nu%25C3%25B1ez%3Ftype%3Ddesign%26node-id%3D1-3%26t%3DF3skMZo7TWf2BeHj-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign"
-            allowfullscreen></iframe> */}
+            allowfullscreen></iframe>
         </div>
 
         <div className="next">
