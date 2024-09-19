@@ -6,7 +6,7 @@ import App from './App';
 import External1 from './external/External1';
 import External2 from './external/External2';
 import External3 from './external/External3';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/NotFound.jsx';
 
 const AppRouter = () => {
     return (

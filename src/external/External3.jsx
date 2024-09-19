@@ -172,7 +172,7 @@ const External3 = () => {
             </p>
           </div>
           {/* <iframe loading="lazy"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTzFIyCADpZGEi5GQ3ut14g%2FGlobal-Fit%3Ftype%3Ddesign%26node-id%3D56-4%26t%3DfYqxSyy8gpKM9GRe-1%26scaling%3Dscale-down%26page-id%3D56%253A2%26mode%3Ddesign"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrYrcznV01nHXuyvRVOJ3i5%2FLeslie-Nu%25C3%25B1ez%3Ftype%3Ddesign%26node-id%3D1-3%26t%3DF3skMZo7TWf2BeHj-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign"
             allowfullscreen></iframe> */}
         </div>
 
