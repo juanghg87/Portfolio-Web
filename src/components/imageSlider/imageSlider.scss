@@ -1,0 +1,47 @@
+@import "../../App.scss";
+
+.slider-image{
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: translate 300ms ease-in-out;
+
+    @include mobile{
+        height: 300px;
+    }
+}
+
+.img-slider-btn{
+     all: unset;
+     display: block;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     padding: 1rem;
+     cursor: pointer;
+     transition: background-color 200ms ease-in-out;
+
+     @include mobile{
+        height: 76%;
+     }
+}
+.img-slider-btn:hover{
+    background-color: rgb(0, 0, 0, 0.2);
+
+    @include mobile{
+        background-color:  transparent;
+    }
+}
+.img-slider-btn > *{
+    stroke: white;
+    fill: black;
+    width: 3rem;
+    height: 2rem;
+}
+
+.div-container{
+    
+    @include mobile{
+        height: 50% !important;
+    }
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import "./portfolio.scss";
 import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion"; 
+import { Link } from 'react-router-dom';
 
 const items = [
   {
@@ -9,15 +10,13 @@ const items = [
     title: "Global Fit",
     img: "./globalFit.gif",
     description: "Physical activity promotes bone and muscle growth, improving spatial perception and coordination. Develops motor skills, reflexes and reactions, promoting values ​​such as tolerance and perseverance. In addition, it contributes to physical and mental health, reducing stress and promoting healthy habits from childhood. Parental support is essential for children's physical, cognitive and personality development.",
-    link: "",
-  },
+  }, 
 
   {
     id: 2,
     title: "Psico Eduardo",
     img: "./mental-health2.jpg",
     description: "Welcome! I am Eduardo Andrés Ospina Villa, a psychologist with a solid academic background, including a Master's Degree in Psychology and Mental Health. With 7 years of experience as a clinical psychologist, I offer specialized care from Post-Rationalist Cognitive Therapy. I provide therapy for children, adolescents and adults, both individually, as a couple or family, whether in person or virtual. I am here to help you!",
-    link: "",
   },
 
   {
@@ -25,7 +24,6 @@ const items = [
     title: "Leslie Nuñez",
     img: "./leslie.PNG",
     description: "Integrate the experience, name and identity of the brand with the different digital platforms in order to expand its reach. The integration and consolidation of the brand identity are the starting point and differentiation. The details of expanding the brand to other platforms are very important, the colors, the logo, the typography, among others. All those components that make a brand its identity.",
-    link: "",
   },
 
   // {
@@ -33,7 +31,6 @@ const items = [
   //     title: "Geotechnical Website",
   //     img: "./geotecnia.jpg",
   //     description: "The creation of the brand and its digital footprint, addressing all identity content such as color, iconography, typography, among others, makes up the main aspect of the birth of Geotechnical in the virtual world, this in order to expand its market, meet with customer demands, generating trust through a complete and intuitive web environment. Reaching more clients, more opportunities in the market nationally.",
-  //     link: "",
   // }
 ]
 
@@ -65,9 +62,6 @@ const Single = ({ item }) => {
                     }} >
                         <motion.h2 whileHover={{ scale: 1.07 }} >{item.title}</motion.h2>
                         <p> {item.description} </p>
-                        <a href={item.link}target="_blank">
-                            <button>View Case Study</button>
-                        </a>
                     </motion.div>
                 </div>
             </div>

@@ -1,0 +1,452 @@
+@import "../App.scss";
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    body#body-external {
+        background: #e0e0e0;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+
+    main {
+        
+        margin: 5% auto auto auto;
+        margin-top: 15%;
+        width: 80%;
+        padding: 5%;
+        border-radius: 20px;
+        background: linear-gradient(225deg, #f0f0f0, #cacaca);
+        box-shadow: -5px 5px 10px #a1a1a1, 5px -5px 10px #ffffff;
+
+        @include tablet {
+            margin: 5% auto auto auto;
+            margin-top: 25%;
+            width: 80%;
+            padding: 5%;
+            border-radius: 20px;
+            background: linear-gradient(225deg, #f0f0f0, #cacaca);
+            box-shadow: -5px 5px 10px #a1a1a1, 5px -5px 10px #ffffff;
+        }
+
+        @include mobile {
+            width: 80%;
+            padding: 5%;
+            margin-top: 30%;
+            border-radius: 20px;
+            background: linear-gradient(225deg, #f0f0f0, #cacaca);
+            box-shadow: -5px 5px 10px #a1a1a1, 5px -5px 10px #ffffff;
+        }
+
+        h1#external-tittle {
+            font-family: "Grey Qo";
+            letter-spacing: 3px;
+            color: #B68508;
+            font-size: 3.5rem;
+            margin: 0 1% 1% 1%;
+            text-align: center;
+
+            @include tablet {
+                font-size: 3.5rem;
+                margin: 5%;
+                text-align: center;
+            }
+
+            @include mobile {
+                margin: 5%;
+                text-align: center;
+            }
+
+        }
+
+        .p-presentation {
+            
+            text-align: justify;
+            margin: 0 2%;
+
+            @include tablet {
+                text-align: justify;
+                margin: 0 2%;
+            }
+
+            @include mobile {
+                text-align: justify;
+                margin: 0 2%;
+            }
+
+        }
+
+
+        .p-content {
+            text-align: justify;
+            margin: 5% 2%;
+
+            @include tablet {
+                text-align: justify;
+                margin: 5% 2%;
+
+            }
+
+            @include mobile {
+                text-align: justify;
+                margin: 5% 2%;
+            }
+
+        }
+
+    }
+
+    hr {
+        margin: 5% auto auto auto;
+        width: 50%;
+        color: #B68508;
+        height: 1px;
+        border: solid;
+    }
+
+    .specifications {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 10px;
+
+        @include tablet {
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 10px;
+        }
+
+        @include mobile {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 5%;
+        }
+
+        h3{
+            margin: 5% 0%;
+            text-align: center;
+        }
+
+        p#p-external {
+            text-align: center;
+            margin: 4% 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+    }
+
+    article h3 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 3% 0;
+
+        @include tablet {
+            font-size: 2rem;
+            margin: 3% 0;
+        }
+
+        @include mobile {
+            font-size: 1.5rem;
+            margin: 5% 0;
+        }
+    }
+
+    article p.opportunity {
+        column-count: 2;
+        column-gap: 20px;
+        text-align: justify;
+        padding: 2% 10%;
+
+        @include tablet {
+            column-count: 2;
+            column-gap: 20px;
+            text-align: justify;
+            padding: 2% 10%;
+        }
+
+        @include mobile {
+            column-count: 1;
+        }
+    }
+
+    .div-features {
+        padding: 5%;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+
+        h3.features,
+        h3.design {
+            color: #B68508;
+            margin: 3% 0;
+            letter-spacing: 1px;
+            font-family: "Grey Qo";
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        p.features,
+        p.design {
+            text-align: justify;
+            letter-spacing: 1px;
+            padding: 3%;
+            border-right: #B68508 1px solid;
+        }
+
+        @include tablet {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            gap: 3%;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .description {
+        background-color: #a1a1a1;
+        color: white;
+        padding: 10%;
+        font-size: 2rem;
+        text-align: right;
+        box-shadow: 0px 9px 17px 0px #000000;
+        letter-spacing: 1px;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
+    }
+
+    div.empathy {
+        margin-top: 10%;
+
+        h3.empathy {
+            padding: 5% 5% 2% 5%;
+        }
+
+        p.empathy {
+            padding: 5%;
+            text-align: justify;
+        }
+    }
+
+    .slider-image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            height: 250px;
+        }
+    }
+
+    .img-integration {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+    }
+
+    img.integration {
+        width: 50%;
+        margin: auto;
+        filter: grayscale(50%);
+        filter: saturate(10%);
+
+        @include mobile{
+            width: 90%;
+        }
+    }
+
+    p.integration {
+        padding: 5%;
+        text-align: justify;
+    }
+
+    h3.integration {
+        padding: 5% 5% 2% 5%;
+    }
+
+    .container-iframe {
+        background-color: #a1a1a1;
+        color: white;
+        padding: 10%;
+        // font-size: 1.5rem;
+        text-align: justify;
+        box-shadow: 0px 9px 17px 0px #000000;
+        // letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
+
+        .h3-iframe {
+            text-align: center;
+            margin: 10% 0;
+            // color: #B68508;
+            // color:#000000;
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+
+        iframe {
+            height: 600px;
+            margin: 5% 0;
+        }
+    }
+
+    .next {
+        padding: 5%;
+        display: flex;
+
+        @include mobile {
+            display: flex;
+            flex: none;
+            // flex-direction: column !important;
+        }
+
+        @include tablet {
+            .next-container {
+                display: flex;
+                // justify-content: space-between;
+                // gap: 20px;
+            }
+
+            .next-container>div {
+                flex: 1;
+                padding: 20px;
+                /* ajusta el relleno según tus necesidades */
+                box-sizing: border-box;
+            }
+        }
+
+        h3.next {
+            text-align: center;
+            font-size: 5rem;
+            color: #B68508;
+            letter-spacing: 2px;
+            font-family: "Grey Qo";
+        }
+
+        h3.next-impact,
+        h3.lessons,
+        h3.develop {
+            font-size: 1.5rem;
+            color: #B68508;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 3%;
+        }
+
+        p.next-impact,
+        p.lessons,
+        p.develop {
+            text-align: justify;
+            padding: 5%;
+        }
+    }
+
+    .next {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .next-container {
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .container-button {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+
+        button.button-resume {
+            position: relative; /* Necesario para que ::before funcione correctamente */
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.678);
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            color: #e0e0e0;
+            transition: all 0.45s ease-in-out; /* Se eliminó 'transform', ya que 'all' lo incluye */
+            font-size: 40px;
+            font-family: "Grey Qo";
+            letter-spacing: 4px;
+            /* margin: 5%; */ /* Comentario en formato correcto */
+        }
+        
+        button.button-resume::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: orange;
+            transform-origin: center;
+            transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+            transition: transform 0.45s ease-in-out;
+        }
+        
+        button.button-resume:hover {
+            cursor: pointer;
+            color: #161616;
+            font-weight: bolder;
+        }
+        
+        button.button-resume:hover::before {
+            transform: translate3d(-50%, -50%, 0) scale3d(20, 20, 20);
+        }
+        
+    }
+
+
+
+}

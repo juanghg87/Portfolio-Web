@@ -99,7 +99,7 @@ const Services = () => {
                 <motion.div className="box" id="psicoEduardo">
                     <h2>Eduardo Ospina</h2>
                     <p>
-                        Mental health is a very personal issue, search within yourself and find a way out, learn and heal, through all those fears, phobias and sufferings that you carry within you.
+                        Mental health is a very personal issue, search within yourself and find a way out, learn and heal, through all those fears, phobias and sufferings that you carry.
                     </p>
                     <Link to="/external2" ><button>UX/UI Design Web Developer</button></Link>
                 </motion.div>

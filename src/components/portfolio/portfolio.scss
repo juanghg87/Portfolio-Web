@@ -23,7 +23,7 @@
             margin: 0 20px 0 0;
             letter-spacing: 10px;
 
-            @include mobile{
+            @include mobile {
                 font-size: 150%;
             }
         }
@@ -53,23 +53,25 @@
 
             @include tablet {
                 flex-direction: column;
-                margin: 20% 0 0 0;
+                margin: 35% 0 0 0;
+                gap: 15%;
             }
 
 
             @include mobile {
-                // flex-direction: column;
                 gap: 0;
-                // height: calc(100% - 450px);
             }
 
             .imageContainer {
                 flex: 1;
                 height: 50%;
-                // border: 1px solid gold;
                 border-radius: 20px;
                 box-shadow: -23px 23px 46px #5a5a5a,
                     23px -23px 46px #ffffff;
+
+                @include tablet {
+                    width: 50%;
+                }
 
 
                 @include mobile {
@@ -85,7 +87,6 @@
                     border-radius: 20px;
 
                     @include mobile {
-                        // object-fit: contain;
                         width: 100%;
                     }
                 }
@@ -123,7 +124,7 @@
                 h2 {
                     font-size: 52px;
                     color: rgba(0, 0, 0, 0.678);
-                    
+
 
                     @include mobile {
                         font-size: 150%;
@@ -137,7 +138,7 @@
                     font-size: 18px;
                     text-align: justify;
 
-                    @include tablet{
+                    @include tablet {
                         font-size: 25px;
                     }
 
